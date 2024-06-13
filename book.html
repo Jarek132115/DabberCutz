@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/book.css">
+    <script defer src="java/book.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-black.png" alt=""></a>
+        </div>
+        <div class="navmenu">
+            <ul class="navlinks">
+                <li><a href="contact.html">Contact</a></li>
+                <div class="book-button">
+                    <li><a href="book.html">Book Now</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="booking-container">
+        <div class="booking-form">       
+            <form action="index.html" onsubmit="return validate()" method="post">
+                <h2 id="test">Book Now</h2>
+                <div class="booking-row-1">
+                    <div class="booking-inputs-1">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="booking-inputs-1">
+                        <label for="Haircut">Haircut Type</label>
+                        <select id="haircut" name="haircut">
+                            <option value="HAIRCUT">HAIRCUT</option>
+                            <option value="SKIN-FADES">SKIN FADES</option>
+                            <option value="FACE-SHAVE">FACE SHAVE</option>
+                            <option value="SHORT-BEARD-TRIM">SHORT BEARD TRIM</option>
+                            <option value="LONG-BEARD-TRIM">LONG BEARD TRIM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="booking-row-2">
+                    <div class="booking-inputs-2">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="booking-inputs-2">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                </div>
+                <div class="form-inputs-message">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="booking-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="booking-image">
+            <img src="images/booking-form-image.jpg" alt="">
+        </div>
+    </div>

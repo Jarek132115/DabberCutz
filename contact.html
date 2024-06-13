@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script defer src="java/contact.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-black.png" alt=""></a>
+        </div>
+        <div class="navmenu">
+            <ul class="navlinks">
+                <li><a href="contact.html">Contact</a></li>
+                <div class="book-button">
+                    <li><a href="book.html">Book Now</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-form">       
+            <form action="index.html" onsubmit="return validate()" method="post">
+                <h2>Contact Us</h2>
+                <div class="form-row-1">
+                    <div class="form-inputs-1">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-inputs-1">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                </div>
+                <div class="form-inputs">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" name="phone">
+                </div>
+                <div class="form-inputs-message">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="form-button">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-image">
+            <img src="images/contact-image.png" alt="">
+        </div>
+    </div>
